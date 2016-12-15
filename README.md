@@ -1,0 +1,2 @@
+# request-header-microservice
+Microservice project for Free Code Camp Backend: This microservice parses the the Browser User-Agent string and returns a JSON containing the client IP address, language and software.
