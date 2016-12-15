@@ -10,6 +10,10 @@ var useragent = require('express-useragent');
 
 app.use(useragent.express());
 
+app.get("/", function (request, response) {
+  response.sendFile(__dirname + '/views/index.html');
+});
+
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/api/whoami", function (request, response) {
   var lang = request.acceptsLanguages();
